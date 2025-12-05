@@ -8,6 +8,7 @@ import { MdDelete } from "react-icons/md";
 import axios from "axios";
 import { serverurl } from "../App";
 import { setShopData } from "../pages/redux/OwnerSlice";
+import Footer from "./Footer";
 const OwnerDashboard = () => {
   const { shopData } = useSelector((state) => state.owner);
   const navigate = useNavigate();
@@ -174,6 +175,7 @@ const handledelete = async (itemId, setItems) => {
           ))}
         </div>
       )}
+      <Footer/>
     </div>
   );
 };

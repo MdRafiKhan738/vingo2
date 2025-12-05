@@ -10,6 +10,7 @@ import Itemcard from "../pages/ItemCard";
 import { Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { serverurl } from "../App";
+import Footer from "./Footer";
 
 const UserDashboard = () => {
   const { currentcity, currentshops,currentitems, searchitems} = useSelector((state) => state.user);
@@ -288,7 +289,13 @@ const[itemscrollbtn,setitemscrollbtn]=useState({ left: false, right: false })
           </div>
           
         </motion.div>
+
+
+
+
+
       </div>
+      <Footer/>
     </div>
   );
 };

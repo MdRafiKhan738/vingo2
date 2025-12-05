@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import APP from './App'
 import{Provider} from "react-redux"
 import { store } from './pages/redux/Store'
+
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <Provider store={store}>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
 
 
   <APP/>
+ 
   </Provider>
   
   

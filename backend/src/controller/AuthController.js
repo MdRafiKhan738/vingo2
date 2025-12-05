@@ -55,7 +55,7 @@ const signup = async (req, res) => {
     // 🍪 Secure Cookie
     res.cookie("token", token, {
       httpOnly: true, // can't be accessed by JS
-      secure: false, // HTTPS only in production
+      secure: true, // HTTPS only in production
       sameSite: "strict",
       maxAge: 3 * 24 * 60 * 60 * 1000, // 3 days
     });
